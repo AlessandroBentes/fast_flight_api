@@ -103,27 +103,27 @@ Exemplo de Response Body (PredictionOutput):
 }
 
 # Estrutura do Projeto:
-# .
-# ├── app/
-# │   ├── main.py               # Ponto de entrada do FastAPI
-# │   ├── routers.py            # Definição do endpoint da API e orquestração dos serviços
-# │   ├── schemas.py            # Modelos Pydantic para Request/Response
-# │   ├── model.py              # Carregamento e inferência do modelo ML
-# │   ├── features.py           # Geração das features base
-# │   ├── airport_service.py    # Obtém coordenadas de aeroportos (CSV local)
-# │   ├── weather_client.py     # Cliente para API Open-Meteo
-# │   ├── weather_features.py   # Agregação de features meteorológicas
-# │   └── cancel_rate.py        # Obtenção de taxas de cancelamento históricas
-# ├── data/                     # Pasta para arquivos CSV de dados (aeroportos, cancelamentos)
-# │   ├── airports_lat_lon.csv
-# │   ├── ops_airline.csv
-# │   ├── ops_origin.csv
-# │   └── ops_route.csv
-# ├── model/                    # Pasta para o artefato do modelo ML
-# │   └── artefato_atraso_voos_rf.joblib
-# ├── .env                      # Variáveis de ambiente (ex: API Keys) - Não incluído no git
-# ├── requirements.txt          # Lista de dependências do projeto
-# └── README.md                 # Este arquivo
+### .
+### ├── app/
+### │   ├── main.py               # Ponto de entrada do FastAPI
+### │   ├── routers.py            # Definição do endpoint da API e orquestração dos serviços
+### │   ├── schemas.py            # Modelos Pydantic para Request/Response
+### │   ├── model.py              # Carregamento e inferência do modelo ML
+### │   ├── features.py           # Geração das features base
+### │   ├── airport_service.py    # Obtém coordenadas de aeroportos (CSV local)
+### │   ├── weather_client.py     # Cliente para API Open-Meteo
+### │   ├── weather_features.py   # Agregação de features meteorológicas
+### │   └── cancel_rate.py        # Obtenção de taxas de cancelamento históricas
+### ├── data/                     # Pasta para arquivos CSV de dados (aeroportos, cancelamentos)
+### │   ├── airports_lat_lon.csv
+### │   ├── ops_airline.csv
+### │   ├── ops_origin.csv
+### │   └── ops_route.csv
+### ├── model/                    # Pasta para o artefato do modelo ML
+### │   └── artefato_atraso_voos_rf.joblib
+### ├── .env                      # Variáveis de ambiente (ex: API Keys) - Não incluído no git
+### ├── requirements.txt          # Lista de dependências do projeto
+### └── README.md                 # Este arquivo
 
 
 # Desafios Técnicos e Aprendizados:

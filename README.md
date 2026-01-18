@@ -2,26 +2,26 @@
 
 Um microserviço Python robusto construído com FastAPI para prever se um voo decolará no horário ("Pontual") ou com atraso ("Atrasado"), fornecendo também uma probabilidade associada à previsão. A solução integra múltiplos fatores, incluindo detalhes do voo, condições meteorológicas em tempo real e taxas históricas de cancelamento.
 
-Visão Geral do Projeto:
+# Visão Geral do Projeto:
 Este projeto demonstra a construção de um microserviço de inferência de Machine Learning (ML) performático e escalável. Ele expõe um endpoint /api/predict/ que recebe dados de um voo e, através de um pipeline de features complexo e um modelo de ML pré-treinado, retorna uma estimativa do status do voo.
 
-Arquitetura de Alto Nível:
+# Arquitetura de Alto Nível:
 
-Cliente (App/Web)
-       ↓
-[ FastAPI Microservice ]
-    ↓
-    ├── AirportService (Coordenadas do Aeroporto)
-    ├── WeatherClient (Dados Meteorológicos - Open-Meteo)
-    ├── CancellationRate (Taxas de Cancelamento Históricas)
-    │
-    └── Features Builder (Engenharia de Features)
-            ↓
-          ML Model (scikit-learn Pipeline)
-            ↓
-[ FastAPI Response ]
-       ↓
-Cliente
+## API Java
+##       ↓
+## [ FastAPI Microservice ]
+##    ↓
+##    ├── AirportService (Coordenadas do Aeroporto)
+##    ├── WeatherClient (Dados Meteorológicos - Open-Meteo)
+##    ├── CancellationRate (Taxas de Cancelamento Históricas)
+##    │
+##    └── Features Builder (Engenharia de Features)
+##            ↓
+##          ML Model (scikit-learn Pipeline)
+##            ↓
+## [ FastAPI Response ]
+##       ↓
+## API Java
 
 Funcionalidades Principais:
 Previsão de Atraso de Voo: Retorna "Pontual" ou "Atrasado" com probabilidade.

@@ -1,0 +1,5 @@
+[project]
+name = "Fast Flight API"
+version = "0.0.1"
+description = "API flight on time FastAPI"
+authors = [{name = "Alessandro Bentes", email = "alessandro.bentes@gmail.com"}]

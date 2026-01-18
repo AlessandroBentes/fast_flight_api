@@ -50,8 +50,8 @@ anyio: Biblioteca de E/S assíncrona, usada para executar tarefas síncronas em 
 Configuração e Instalação:
 Clone o repositório:
 
-git clone https://github.com/AlessandroBentes/microservico
-cd <microservico>
+git clone https://github.com/AlessandroBentes/fast_flight_api
+cd <fast_flight_api>
 Crie e ative um ambiente virtual:
 python -m venv .venv
 # No Windows:
